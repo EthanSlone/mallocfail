@@ -6,13 +6,20 @@
     <description>Recent content in Tags on mallocfail</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mallocfail.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Meta</title>
       <link>https://mallocfail.com/tags/meta/</link>
-      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://mallocfail.com/tags/meta/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Site</title>
+      <link>https://mallocfail.com/tags/site/</link>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mallocfail.com/tags/site/</guid>
       <description></description>
     </item>
   </channel>
