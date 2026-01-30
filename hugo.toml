@@ -1,4 +1,4 @@
-baseURL = "http://mallocfail.com.s3-website-us-east-1.amazonaws.com/"
+baseURL = "https://mallocfail.com/"
 languageCode = "en-us"
 title = "mallocfail"
 theme = "neopost"
