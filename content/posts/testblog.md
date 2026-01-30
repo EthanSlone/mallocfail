@@ -16,7 +16,7 @@ This is just a little bit of a longer test blog page.
 ### rawr
 I am trying to become more familiar with the hugo construction syntax. 
 
-# h1
+# H1 Markdown?
 
 Markdown?
 
@@ -24,4 +24,4 @@ More like schmark down. Easy peasy but actually really nice for blogging. Never 
 
 Here's a picture of a cat for testing!
 
-![Cat:D](https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.aaha.org%2Fresources%2Flets-get-purr-sonal-interesting-facts-about-cats%2F&ved=0CBYQjRxqFwoTCOD9jujmspIDFQAAAAAdAAAAABAH&opi=89978449)
+[![Cat:D](https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.aaha.org%2Fresources%2Flets-get-purr-sonal-interesting-facts-about-cats%2F&ved=0CBYQjRxqFwoTCOD9jujmspIDFQAAAAAdAAAAABAH&opi=89978449)]
