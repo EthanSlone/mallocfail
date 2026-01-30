@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/hello-world-copy/</loc>
+    <loc>https://mallocfail.com/posts/hello-world-copy/</loc>
     <lastmod>2026-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/hello-world/</loc>
+    <loc>https://mallocfail.com/posts/hello-world/</loc>
     <lastmod>2026-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://mallocfail.com/</loc>
     <lastmod>2026-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/meta/</loc>
+    <loc>https://mallocfail.com/tags/meta/</loc>
     <lastmod>2026-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://mallocfail.com/posts/</loc>
     <lastmod>2026-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://mallocfail.com/tags/</loc>
     <lastmod>2026-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>https://mallocfail.com/authors/</loc>
   </url><url>
-    <loc>http://localhost:1313/authors/ethan/</loc>
+    <loc>https://mallocfail.com/authors/ethan/</loc>
   </url><url>
-    <loc>http://localhost:1313/authors/gary/</loc>
+    <loc>https://mallocfail.com/authors/gary/</loc>
   </url>
 </urlset>
