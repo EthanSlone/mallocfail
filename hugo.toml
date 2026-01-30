@@ -1,4 +1,14 @@
-baseURL = 'http://mallocfail.com.s3-website-us-east-1.amazonaws.com'
-languageCode = 'en-us'
-title = 'Mallocfail Cyber Blog'
+baseURL = "http://mallocfail.com.s3-website-us-east-1.amazonaws.com/"
+languageCode = "en-us"
+title = "mallocfail"
 theme = "neopost"
+
+[pagination]
+  pagerSize = 12
+
+[taxonomies]
+  tag = "tags"
+  author = "authors"
+
+[params]
+  description = "Cyber writeups, cloud mistakes, OSINT trails, and lab notes."

@@ -3,8 +3,8 @@ title: "Hello World"
 date: 2026-01-29
 draft: false
 tags: ["meta"]
-author: ["Ethan"]
-summary: "Test Theme"
+author: ["Gary"]
+summary: "Test For Gary"
 ---
 
 

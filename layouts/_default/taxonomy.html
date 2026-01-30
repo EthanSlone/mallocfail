@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="mf-container">
+  <h1>{{ .Title }}</h1>
+
+  <div class="mf-grid">
+    {{ range .Pages.ByDate.Reverse }}
+      <article class="mf-card">
+        <h2 class="mf-card-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+
+        <div class="mf-meta">
+          {{ with .Params.author }}
+            <span>@{{ index . 0 }}</span>
+          {{ end }}
+          <span>·</span>
+          <span>{{ .Date.Format "02 Jan 2006" }}</span>
+        </div>
+
+        {{ with .Summary }}
+          <p class="mf-summary">{{ . }}</p>
+        {{ end }}
+
+        {{ with .Params.tags }}
+          <div class="mf-tags">
+            {{ range . }}
+              <a class="mf-tag" href="/tags/{{ . | urlize }}/">#{{ . }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

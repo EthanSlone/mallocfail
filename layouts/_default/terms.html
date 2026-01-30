@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="mf-container">
+  <h1>{{ .Title }}</h1>
+  <ul class="mf-list">
+    {{ range .Data.Terms.Alphabetical }}
+      <li>
+        <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+        <span class="mf-muted">({{ .Count }})</span>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

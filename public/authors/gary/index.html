@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>Posts | mallocfail</title>
+    <title>Gary | mallocfail</title>
     <link rel="canonical" href="http://localhost:1313/">
     
     
     
-    <meta name="description" content="">
+    <meta name="description" content="Reverse engineering, exploit dev, and “why did this work?” notes.
+
+GitHub: https://github.com/Garsey
+">
     
     
     
@@ -558,6 +561,46 @@ pre {
         <header><h1 id="mallocfail"><a href="http://localhost:1313/">mallocfail</a></h1></header>
 <main>
     
+<div id="single-post">
+
+    <article>
+        <h2>Gary</h2>
+        
+        tags:
+        
+        <div class="post-header">
+        @ <span class="timestamp">01/01/0001</span>
+        </div>
+        <p><p>Reverse engineering, exploit dev, and “why did this work?” notes.</p>
+<ul>
+<li>GitHub: <a href="https://github.com/Garsey">https://github.com/Garsey</a></li>
+</ul></p>
+        
+        <div class="auto-numbering" id="full-content"></div>
+        
+    </article>
+    <script>
+    window.addEventListener('click', e => {
+        let dropboxs = document.getElementsByClassName("dropbox-content");
+        let dropbox_btns = document.getElementsByClassName("dropbox-btn");
+
+        if (dropbox_btns.namedItem(e.target.id) != null) return;
+
+        if(dropboxs.namedItem(e.target.id) == null) {
+            for (let i = 0; i < dropboxs.length; i++) {
+                dropboxs[i].removeAttribute("visible");
+            }
+        }
+    }, true)
+
+    function toggleDropbox(id) {
+        let dropbox = document.getElementById(id);
+
+        dropbox.toggleAttribute("visible");
+    }
+    </script>
+</div>
+
     
 </main>
 </body>

@@ -1,0 +1,66 @@
+{{ define "main" }}
+<section class="mf-hero mf-wrap">
+  <div class="mf-hero__top">
+    <div>
+      <div class="mf-kicker">mallocfail.com</div>
+      <h1 class="mf-title">Mallocfail</h1>
+      <p class="mf-subtitle">CTF writeups, cloud security footguns, OSINT trails, and lab notes.</p>
+      <div class="mf-actions">
+        <a class="mf-btn mf-btn--primary" href="/posts/">Browse posts</a>
+        <a class="mf-btn" href="/tags/">Tags</a>
+        <a class="mf-btn" href="/authors/">Authors</a>
+      </div>
+    </div>
+    <div class="mf-terminal">
+      <div class="mf-terminal__bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="mf-terminal__title">session: public</span>
+      </div>
+      <pre class="mf-terminal__body"><code>$ whoami
+mallocfail
+$ cat mission.txt
+Document the breakage. Share the fix.
+$ ls topics/
+ctf  aws  osint  homelab  scripts</code></pre>
+    </div>
+  </div>
+</section>
+
+<section class="mf-wrap">
+  <div class="mf-sectionhead">
+    <h2>Latest posts</h2>
+    <a class="mf-link" href="/posts/">View all →</a>
+  </div>
+
+  <div class="mf-grid">
+    {{ range first 12 (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
+      <article class="mf-card">
+        <div class="mf-card__meta">
+          {{ with .Params.author }}
+            {{ $a := index . 0 }}
+            <a class="mf-pill" href="/authors/{{ $a | urlize }}/">@{{ $a }}</a>
+          {{ end }}
+          <span class="mf-dim">·</span>
+          <span class="mf-dim">{{ .Date.Format "02 Jan 2006" }}</span>
+        </div>
+
+        <h3 class="mf-card__title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+
+        {{ with .Summary }}
+          <p class="mf-card__summary">{{ . }}</p>
+        {{ end }}
+
+        {{ with .Params.tags }}
+          <div class="mf-tags">
+            {{ range first 4 . }}
+              <a class="mf-tag" href="/tags/{{ . | urlize }}/">#{{ . }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

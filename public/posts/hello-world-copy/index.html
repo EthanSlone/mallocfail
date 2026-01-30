@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>Posts | mallocfail</title>
+    <title>Hello World | mallocfail</title>
     <link rel="canonical" href="http://localhost:1313/">
     
     
     
-    <meta name="description" content="">
+    <meta name="description" content="Test For Gary">
     
+    
+    <meta name="keywords" content="meta">
     
     
     <style>
@@ -558,6 +560,46 @@ pre {
         <header><h1 id="mallocfail"><a href="http://localhost:1313/">mallocfail</a></h1></header>
 <main>
     
+<div id="single-post">
+
+    <article>
+        <h2>Hello World</h2>
+        
+        tags:
+        
+        <a href="/tags/meta">meta</a>
+        
+        <div class="post-header">
+        @[Gary] <span class="timestamp">29/01/2026</span>
+        </div>
+        <p>Test For Gary</p>
+        
+        <div class="auto-numbering" id="full-content"><p><em><strong>TEST</strong></em></p>
+</div>
+        
+    </article>
+    <script>
+    window.addEventListener('click', e => {
+        let dropboxs = document.getElementsByClassName("dropbox-content");
+        let dropbox_btns = document.getElementsByClassName("dropbox-btn");
+
+        if (dropbox_btns.namedItem(e.target.id) != null) return;
+
+        if(dropboxs.namedItem(e.target.id) == null) {
+            for (let i = 0; i < dropboxs.length; i++) {
+                dropboxs[i].removeAttribute("visible");
+            }
+        }
+    }, true)
+
+    function toggleDropbox(id) {
+        let dropbox = document.getElementById(id);
+
+        dropbox.toggleAttribute("visible");
+    }
+    </script>
+</div>
+
     
 </main>
 </body>
